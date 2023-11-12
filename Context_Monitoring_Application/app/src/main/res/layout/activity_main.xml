@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+
+    <Button
+        android:id="@+id/buttonMeasureRespiratoryRate"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="40dp"
+        android:text="MEASURE RESPIRATORY RATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="182dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="29dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHeartRateResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewRespiratoryRateResult"
+        android:layout_width="310dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMeasureRespiratoryRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonMeasureHeartRate"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="54dp"
+        android:text="MEASURE HEART RATE"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRespiratoryRateResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/heartRateSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="182dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="29dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHeartRateResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewHeartRateResult"
+        android:layout_width="310dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMeasureHeartRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonUploadSigns"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="182dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="58dp"
+        android:text="UPLOAD SIGNS"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSymptoms"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="45dp"
+        android:baselineAligned="false"
+        android:text="SYMPTOMS"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUploadSigns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

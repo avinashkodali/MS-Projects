@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Context_Monitoring_Application</string>
+    <string-array name="symptom_options">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore Throat</item>
+        <item>Fever</item>
+        <item>Muscle Ache</item>
+        <item>Loss of Smell or Taste</item>
+        <item>Cough</item>
+        <item>Difficulty Breathing</item>
+        <item>Feeling Tired</item>
+    </string-array>
+</resources>
