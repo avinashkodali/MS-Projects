@@ -1,0 +1,46 @@
+Requirements -
+
+Software Requirements - 
+1) Python 3.6 to 3.8 (do not use 3.9)
+2) scikit-learn==0.21.2
+3) pandas==0.25.1
+4) Python pickle
+
+Steps to Execute the code - 
+1) Extract the folder Avinash_Kodali_Project1.zip 
+2) Before executing python file, ensure that CGMData.csv and InsulinData.csv are present in the same folder as that of main.py
+3) Execute the main.py file
+
+Output -
+1) Once executed, the Results.csv file is generated in the same folder in which main.py is present.
+2) The Results.csv file is 2x18 matrix with all metric calculated for manual and auto mode.
+
+Note -
+CGMData.csv and InsulinData.csv should be located in the same folder as main.py
+
+Link to resources -
+1) Pandas Dataframes - https://www.w3schools.com/python/pandas/pandas_dataframes.asp
+2) Python Pandas - Dataframe - https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm
+3) Pandas documentation - https://pandas.pydata.org/docs/user_guide/
+
+Metrics to be extracted -
+1) Percentage time in hyperglycemia (CGM > 180 mg/dL), 
+2) percentage of time in hyperglycemia critical (CGM > 250 mg/dL), 
+3) percentage time in range (CGM >= 70 mg/dL and CGM <= 180 mg/dL), 
+4) percentage time in range secondary (CGM >= 70 mg/dL and CGM <= 150 mg/dL), 
+5) percentage time in hypoglycemia level 1 (CGM < 70 mg/dL), and 
+6) percentage time in hypoglycemia level 2 (CGM < 54 mg/dL).
+Each of the above-mentioned metrics are extracted in three different time intervals: daytime (6 am to midnight), overnight (midnight to 6 am), and whole day (12 am to 12 am).
+
+Step-by-step instructions followed in main.py -
+1) Load the CGMData.csv and InsulinData.csv data into dataframes.
+2) Create a new column "date_time_stamp" from the columns "Date" and "Time" and make it as an index.
+3) Clean the dataframes by removing the null values and those dates whose entries are less than 80% of 288 five minute intervals.
+4) From the InsulinData.csv, extract the date and time when the mode changes from manual to auto.
+5) Using the date and time in step 4, split the CGMData dataframe into manual and auto mode dataframes.
+6) Using the auto mode dataframe, calculate all the 18 metrics.
+7) Using the manual mode dataframe, calculate all the 18 metrics.
+8) Create a results datframe which stores all the metrics for manual and auto mode and save this dataframe into a Results.csv.
+
+
+
