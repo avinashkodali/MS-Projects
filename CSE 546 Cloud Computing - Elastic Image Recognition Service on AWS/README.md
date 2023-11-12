@@ -14,8 +14,8 @@
 
 ## AWS Credentials
 
-1. Access key ID - AKIAQWWPM47USHFRM3UG
-2. Secret access key - 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
+1. Access key ID - xxxxx
+2. Secret access key - xxxxxx
 
 ## Web Tier URL
 
