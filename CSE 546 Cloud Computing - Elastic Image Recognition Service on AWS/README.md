@@ -12,11 +12,6 @@
 2. Manogna Pagadala - Developing up the front-end application, which makes it easier to input images and retrieve results from the App-tier (Machine Learning model)
 3. Manaswi Kommini - Create an autoscaling group to dynamically scale the application. 
 
-## AWS Credentials
-
-1. Access key ID - xxxxxxx
-2. Secret access key - xxxxxx
-
 ## Web Tier URL
 
 http://ec2-54-88-17-223.compute-1.amazonaws.com:8080/
