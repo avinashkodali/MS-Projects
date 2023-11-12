@@ -1,0 +1,12 @@
+[Unit]
+Description=Java Script to fetch queue messages
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/app-tier
+ExecStart=/usr/bin/java -jar /home/ubuntu/app-tier/AppTier.jar
+
+[Install]
+WantedBy=multi-user.target

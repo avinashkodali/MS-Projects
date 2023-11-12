@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#submit').click(function() {
+		$('#img').show();
+	});
+});
+</script>
+
+</head>
+<body>
+	<form th:action="@{/results}" th:object="${images}" method="get"
+		enctype="multipart/form-data">
+		<label>Uploaded Images Result Page</label> <br />
+		<br /> <input id="submit" type="submit" tabindex="5"
+			value="Get Results"> <br /> <br /> 
+			<img id="img" src="../static/images/resloading.gif"  
+			th:src="@{images/resloading.gif}" style="display: none"/>
+
+	</form>
+</body>
+
+</html>
